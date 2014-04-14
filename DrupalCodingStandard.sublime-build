@@ -1,4 +1,5 @@
 {
-  "cmd": ["phpcs", "--report=emacs", "--standard=Drupal", "--extensions=php,module,inc,install,test,profile,theme", "$file"],
-  "file_regex": "^(.*):(.*):(.*):(.*)$"
+  "cmd": ["phpcs", "--standard=//Users/kepford/.composer/vendor/drupal/coder/coder_sniffer/Drupal", "--extensions=php,module,inc,install,test,profile,theme", "$file"],
+  "file_regex": "^(.*):(.*):(.*):(.*)$",
+  "env" : { "PATH" : "$HOME/.composer/vendor/bin:$PATH" }
 }
